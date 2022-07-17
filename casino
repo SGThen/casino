@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--james sisterhen-->
+<br lang="en">
+<body style="background-color:rgba(226, 43, 116, 0.356);"></body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   <!--differnt sized font using headers becuase i do not know how to do it otherwise-->
+</head>
+<h1>
+    Welcome to Casino Royal!
+    <br/>
+
+</h1>
+<h3>
+    Simple Craps is the Name of the Game
+    <br/>
+</h3>
+<h3> 
+    You will never win against the dealer
+</h3>
+
+<br>
+<script>
+//random number generator
+function play() {
+var die1 = Math.floor(Math.random() * 7) + 1;
+var die2 = Math.floor(Math.random() * 7) + 1;
+//how to the numbers from the dice to the page
+var sum = die1+die2
+//printing it on the page
+document.write("Die 1 = " + die1)
+document.write("<br/>")
+document.write("Die 2 = " + die2)
+document.write("<br/>")
+document.write("Sum = " + sum)
+document.write("<br/>")
+//the outcome of win or lose
+if (sum == 7 || sum == 11)
+{ document.write("CRAPS - you lose")
+document.write("<br/>")
+}
+else if (die1 == die2 && die1%2 == 0)
+{
+
+document.write("DOUBLES - you win")
+document.write("<br/>")
+}
+
+
+
+
+
+}
+//line break
+document.write("<br/>")
+play()
+
+
+</script>
+</br>
+</br>
+
+<div>
+    <!--Button to get the party started-->
+<button style="width:230;height:70;border:black; font: bold 25px GreatVibes;" onclick="history.go(0)">Try your Luck Here!</button>
+
+
+    </div>
+<!--Betting box to make things more interesting-->
+    <form action="">
+        <input type="Currency"; />
+        <button type="submit" value="Submit">Bet Amount in US Dollars</button>
+        </form>
+        
+<!--end of page-->
+</body>
